@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -17,11 +18,65 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DNk-GA-zS3" customClass="ScratchPadView">
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d3H-1p-qof">
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="93" id="4eT-Fr-CDk"/>
+                                            <constraint firstAttribute="width" constant="93" id="a1W-yK-guu"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                        <state key="normal" title="Clear">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="4eT-Fr-CDk"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <mask key="constraints">
+                                                <include reference="4eT-Fr-CDk"/>
+                                            </mask>
+                                        </variation>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ORt-h1-l7z">
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                        <state key="normal" title="Close Scratchpad">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kd2-IS-mhO">
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                        <state key="normal" title="Save to Photos">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.66666666669999997" green="0.66666666669999997" blue="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="d3H-1p-qof" firstAttribute="baseline" secondItem="ORt-h1-l7z" secondAttribute="baseline" id="BMd-Od-rMW"/>
+                                    <constraint firstItem="ORt-h1-l7z" firstAttribute="baseline" secondItem="Kd2-IS-mhO" secondAttribute="baseline" id="Mb3-Es-ifb"/>
+                                    <constraint firstItem="d3H-1p-qof" firstAttribute="leading" secondItem="DNk-GA-zS3" secondAttribute="leadingMargin" id="Oas-2o-DTT"/>
+                                    <constraint firstItem="d3H-1p-qof" firstAttribute="bottom" secondItem="DNk-GA-zS3" secondAttribute="bottomMargin" id="Pay-9U-AFx"/>
+                                    <constraint firstItem="Kd2-IS-mhO" firstAttribute="leading" secondItem="ORt-h1-l7z" secondAttribute="trailing" constant="13" id="UY8-rY-t0C"/>
+                                    <constraint firstItem="Kd2-IS-mhO" firstAttribute="trailing" secondItem="DNk-GA-zS3" secondAttribute="trailingMargin" id="ZE7-xB-5wh"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" red="0.49803921569999998" green="0.49803921569999998" blue="0.49803921569999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="DNk-GA-zS3" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="9PR-ps-hyh"/>
+                            <constraint firstItem="DNk-GA-zS3" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="FJt-sh-TBA"/>
+                            <constraint firstItem="DNk-GA-zS3" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="NUL-qk-YOc"/>
+                            <constraint firstAttribute="trailing" secondItem="DNk-GA-zS3" secondAttribute="trailing" id="PzV-2W-Cwk"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="116" y="123.68815592203899"/>
         </scene>
     </scenes>
 </document>

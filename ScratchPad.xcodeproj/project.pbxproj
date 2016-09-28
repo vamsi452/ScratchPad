@@ -13,6 +13,7 @@
 		E0BDA35E1D9C54580045DDE5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0BDA35C1D9C54580045DDE5 /* Main.storyboard */; };
 		E0BDA3601D9C54580045DDE5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E0BDA35F1D9C54580045DDE5 /* Assets.xcassets */; };
 		E0BDA3631D9C54580045DDE5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0BDA3611D9C54580045DDE5 /* LaunchScreen.storyboard */; };
+		E0BDA36C1D9C59270045DDE5 /* ScratchPadView.m in Sources */ = {isa = PBXBuildFile; fileRef = E0BDA36B1D9C59270045DDE5 /* ScratchPadView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		E0BDA35F1D9C54580045DDE5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E0BDA3621D9C54580045DDE5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E0BDA3641D9C54580045DDE5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E0BDA36A1D9C59270045DDE5 /* ScratchPadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScratchPadView.h; sourceTree = "<group>"; };
+		E0BDA36B1D9C59270045DDE5 /* ScratchPadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScratchPadView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +66,8 @@
 				E0BDA3591D9C54580045DDE5 /* ViewController.h */,
 				E0BDA35A1D9C54580045DDE5 /* ViewController.m */,
 				E0BDA35C1D9C54580045DDE5 /* Main.storyboard */,
+				E0BDA36A1D9C59270045DDE5 /* ScratchPadView.h */,
+				E0BDA36B1D9C59270045DDE5 /* ScratchPadView.m */,
 				E0BDA35F1D9C54580045DDE5 /* Assets.xcassets */,
 				E0BDA3611D9C54580045DDE5 /* LaunchScreen.storyboard */,
 				E0BDA3641D9C54580045DDE5 /* Info.plist */,
@@ -154,6 +159,7 @@
 				E0BDA35B1D9C54580045DDE5 /* ViewController.m in Sources */,
 				E0BDA3581D9C54580045DDE5 /* AppDelegate.m in Sources */,
 				E0BDA3551D9C54580045DDE5 /* main.m in Sources */,
+				E0BDA36C1D9C59270045DDE5 /* ScratchPadView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -312,6 +318,7 @@
 				E0BDA3691D9C54580045DDE5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
