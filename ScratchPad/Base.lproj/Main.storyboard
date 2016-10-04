@@ -21,6 +21,15 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DNk-GA-zS3" customClass="ScratchPadView">
                                 <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kd2-IS-mhO">
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                        <state key="normal" title="Save to Photos">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="saveScreenshot" destination="BYZ-38-t0r" eventType="touchUpInside" id="pJH-xm-rVI"/>
+                                        </connections>
+                                    </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d3H-1p-qof">
                                         <constraints>
                                             <constraint firstAttribute="width" constant="93" id="4eT-Fr-CDk"/>
@@ -44,30 +53,13 @@
                                             <action selector="clearPath:" destination="DNk-GA-zS3" eventType="touchUpInside" id="DWp-C4-aOW"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ORt-h1-l7z">
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
-                                        <state key="normal" title="Close Scratchpad">
-                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        </state>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kd2-IS-mhO">
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
-                                        <state key="normal" title="Save to Photos">
-                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="saveScreenshot" destination="BYZ-38-t0r" eventType="touchUpInside" id="pJH-xm-rVI"/>
-                                        </connections>
-                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.66666666669999997" green="0.66666666669999997" blue="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstItem="d3H-1p-qof" firstAttribute="baseline" secondItem="ORt-h1-l7z" secondAttribute="baseline" id="BMd-Od-rMW"/>
-                                    <constraint firstItem="ORt-h1-l7z" firstAttribute="baseline" secondItem="Kd2-IS-mhO" secondAttribute="baseline" id="Mb3-Es-ifb"/>
                                     <constraint firstItem="d3H-1p-qof" firstAttribute="leading" secondItem="DNk-GA-zS3" secondAttribute="leadingMargin" id="Oas-2o-DTT"/>
                                     <constraint firstItem="d3H-1p-qof" firstAttribute="bottom" secondItem="DNk-GA-zS3" secondAttribute="bottomMargin" id="Pay-9U-AFx"/>
-                                    <constraint firstItem="Kd2-IS-mhO" firstAttribute="leading" secondItem="ORt-h1-l7z" secondAttribute="trailing" constant="13" id="UY8-rY-t0C"/>
-                                    <constraint firstItem="Kd2-IS-mhO" firstAttribute="trailing" secondItem="DNk-GA-zS3" secondAttribute="trailingMargin" id="ZE7-xB-5wh"/>
+                                    <constraint firstAttribute="trailing" secondItem="Kd2-IS-mhO" secondAttribute="trailing" constant="8" id="SJv-du-UiR"/>
+                                    <constraint firstAttribute="bottom" secondItem="Kd2-IS-mhO" secondAttribute="bottom" constant="8" id="sJh-mC-0V5"/>
                                 </constraints>
                             </view>
                         </subviews>

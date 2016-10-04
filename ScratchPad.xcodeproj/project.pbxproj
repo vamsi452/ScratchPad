@@ -68,6 +68,8 @@
 				E0BDA3571D9C54580045DDE5 /* AppDelegate.m */,
 				E0BDA3591D9C54580045DDE5 /* ViewController.h */,
 				E0BDA35A1D9C54580045DDE5 /* ViewController.m */,
+				E0FE9A491DA0271500793E73 /* ScratchPadViewController.h */,
+				E0FE9A4A1DA0271500793E73 /* ScratchPadViewController.m */,
 				E0BDA35C1D9C54580045DDE5 /* Main.storyboard */,
 				E0BDA36A1D9C59270045DDE5 /* ScratchPadView.h */,
 				E0BDA36B1D9C59270045DDE5 /* ScratchPadView.m */,
@@ -75,8 +77,6 @@
 				E0BDA3611D9C54580045DDE5 /* LaunchScreen.storyboard */,
 				E0BDA3641D9C54580045DDE5 /* Info.plist */,
 				E0BDA3531D9C54580045DDE5 /* Supporting Files */,
-				E0FE9A491DA0271500793E73 /* ScratchPadViewController.h */,
-				E0FE9A4A1DA0271500793E73 /* ScratchPadViewController.m */,
 			);
 			path = ScratchPad;
 			sourceTree = "<group>";
