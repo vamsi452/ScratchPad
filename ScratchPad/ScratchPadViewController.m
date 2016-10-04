@@ -30,6 +30,7 @@
     // Define the dimensions of the screenshot you want to take (the entire screen in this case)
     CGSize size =  [[UIScreen mainScreen] bounds].size;
     
+    
     // Create the screenshot
     UIGraphicsBeginImageContext(size);
     // Put everything in the current view into the screenshot
@@ -54,27 +55,12 @@
     }
     else {
         
-        UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Saved" message:@"Your Scratchpad is saved to photos." preferredStyle:UIAlertControllerStyleAlert]; // 7
+        UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"Successful" message:@"Your Sketch has been saved to photos" preferredStyle:UIAlertControllerStyleAlert];
         
-        UIAlertAction *defaultAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:^(UIAlertAction * action) {
-            NSLog(@"You pressed button OK");
-        }]; // 8
+        UIAlertAction* ok = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:nil];
+        [alertController addAction:ok];
         
-        [alert addAction:defaultAction]; // 9
-        
-        [alert addTextFieldWithConfigurationHandler:^(UITextField *textField) {
-            textField.placeholder = @"Input data...";
-        }]; // 10
-        /*
-        [self presentViewController:alert animated:YES completion:nil];
-        
-        NSString *title = @"Saved";
-        NSString *msg = @"Your Scratchpad is saved to photos";
-            UIAlertController *alertController = [self showAlertWithTitle:title Message: msg];
-            [self presentViewController:alertController animated:YES completion:nil];
-        NSLog(@"Saved to photos");
-         */
-        // The save was successful and all is well
+        [self presentViewController:alertController animated:YES completion:nil];
     }
 }
 

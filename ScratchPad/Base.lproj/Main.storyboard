@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="NO" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <deployment identifier="iOS"/>
+        <deployment version="2304" identifier="iOS"/>
+        <development version="7000" identifier="xcode"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
-        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--Scratch Pad View Controller-->
@@ -16,19 +16,31 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DNk-GA-zS3" customClass="ScratchPadView">
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DNk-GA-zS3" customClass="ScratchPadView">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d3H-1p-qof">
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kd2-IS-mhO">
+                                        <rect key="frame" x="251" y="607" width="116" height="32"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                        <state key="normal" title="Save to Photos">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="saveScreenshot" destination="BYZ-38-t0r" eventType="touchUpInside" id="pJH-xm-rVI"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d3H-1p-qof">
+                                        <rect key="frame" x="8" y="607" width="93" height="32"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="93" id="4eT-Fr-CDk"/>
                                             <constraint firstAttribute="width" constant="93" id="a1W-yK-guu"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
                                         <state key="normal" title="Clear">
-                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
                                         <variation key="default">
                                             <mask key="constraints">
@@ -44,34 +56,17 @@
                                             <action selector="clearPath:" destination="DNk-GA-zS3" eventType="touchUpInside" id="DWp-C4-aOW"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ORt-h1-l7z">
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
-                                        <state key="normal" title="Close Scratchpad">
-                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        </state>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kd2-IS-mhO">
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
-                                        <state key="normal" title="Save to Photos">
-                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="saveScreenshot" destination="BYZ-38-t0r" eventType="touchUpInside" id="pJH-xm-rVI"/>
-                                        </connections>
-                                    </button>
                                 </subviews>
-                                <color key="backgroundColor" red="0.66666666669999997" green="0.66666666669999997" blue="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstItem="d3H-1p-qof" firstAttribute="baseline" secondItem="ORt-h1-l7z" secondAttribute="baseline" id="BMd-Od-rMW"/>
-                                    <constraint firstItem="ORt-h1-l7z" firstAttribute="baseline" secondItem="Kd2-IS-mhO" secondAttribute="baseline" id="Mb3-Es-ifb"/>
                                     <constraint firstItem="d3H-1p-qof" firstAttribute="leading" secondItem="DNk-GA-zS3" secondAttribute="leadingMargin" id="Oas-2o-DTT"/>
                                     <constraint firstItem="d3H-1p-qof" firstAttribute="bottom" secondItem="DNk-GA-zS3" secondAttribute="bottomMargin" id="Pay-9U-AFx"/>
-                                    <constraint firstItem="Kd2-IS-mhO" firstAttribute="leading" secondItem="ORt-h1-l7z" secondAttribute="trailing" constant="13" id="UY8-rY-t0C"/>
-                                    <constraint firstItem="Kd2-IS-mhO" firstAttribute="trailing" secondItem="DNk-GA-zS3" secondAttribute="trailingMargin" id="ZE7-xB-5wh"/>
+                                    <constraint firstAttribute="trailing" secondItem="Kd2-IS-mhO" secondAttribute="trailing" constant="8" id="SJv-du-UiR"/>
+                                    <constraint firstAttribute="bottom" secondItem="Kd2-IS-mhO" secondAttribute="bottom" constant="8" id="sJh-mC-0V5"/>
                                 </constraints>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" red="0.49803921569999998" green="0.49803921569999998" blue="0.49803921569999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.49803921569999998" green="0.49803921569999998" blue="0.49803921569999998" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="DNk-GA-zS3" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="9PR-ps-hyh"/>
                             <constraint firstItem="DNk-GA-zS3" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="FJt-sh-TBA"/>
